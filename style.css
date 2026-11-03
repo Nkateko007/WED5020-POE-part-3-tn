@@ -1,0 +1,404 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F5F7;
+  color: #1B1F27;
+  line-height: 1.6;
+}
+
+a {
+  color: #13315C;
+}
+
+/* image sizes that will be displayed */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.responsive-image {
+  height: auto;
+  max-width: 100%;
+}
+
+/* ============ HEADER ============ */
+
+header {
+  background-color: #0B2545;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #C5CCD6;
+  margin-bottom: 10px;
+}
+
+/* ============ NAVIGATION MENU ============ */
+
+nav {
+  background-color: #071A33;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #C5CCD6;
+  color: #0B2545;
+}
+
+nav ul li a:focus {
+  background-color: #C5CCD6;
+  color: #0B2545;
+}
+
+nav ul li a:active {
+  background-color: #4C78AC;
+  color: white;
+}
+
+/* shows which page we are on right now */
+nav ul li a.current {
+  text-decoration: underline;
+  color: #C5CCD6;
+}
+
+/* ============ MAIN PAGE CONTENT ============ */
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  padding: 10px;
+  color: #0B2545;
+  background-color: #C5CCD6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #0B2545;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* ============ CARD / TEAM / SERVICE GRID ============ */
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.container div {
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  color: #1B1F27;
+  text-align: center;
+  border: 1px solid #C5CCD6;
+  box-shadow: 2px 2px 5px #cccccc;
+}
+
+.container div .icon {
+  font-size: 32px;
+}
+
+/* ============ HERO SECTION ON THE HOMEPAGE ============ */
+
+.hero {
+  background-color: #C5CCD6;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.hero-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+
+.hero-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ============ BUTTON ============ */
+
+.btn {
+  display: inline-block;
+  background-color: #8FB3E0;
+  color: #0B2545;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 5px #999999;
+}
+
+.btn:hover {
+  background-color: #6E97C9;
+}
+
+.btn:focus {
+  background-color: #6E97C9;
+  outline: 2px solid #0B2545;
+}
+
+.btn:active {
+  background-color: #4C78AC;
+}
+
+/* ============ FORMS (used on enquiry.html and contact.html) ============ */
+
+form {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #999999;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #13315C;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ============ CONTACT PAGE MAPS ============ */
+
+.map-box {
+  margin-bottom: 25px;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 220px;
+  border: 0;
+}
+
+/* ============ PART 3: FORMS, ACCORDION, LIGHTBOX, MAP, ANIMATION ============ */
+
+.error { color: #B00020; font-size: 14px; display: block; margin-top: -10px; margin-bottom: 10px; }
+input.invalid, select.invalid, textarea.invalid { border: 2px solid #B00020; }
+input[type="radio"], input[type="checkbox"] { width: auto; margin: 0 8px 0 0; }
+.option { margin-bottom: 8px; }
+.option label { display: inline; font-weight: normal; }
+.response-box { background-color: white; border-left: 5px solid #13315C; padding: 15px; margin-top: 20px; display: none; }
+.response-box.show { display: block; }
+.search-bar { max-width: 400px; margin-top: 10px; }
+
+.accordion-btn { display: block; width: 100%; text-align: left; background-color: #13315C; color: white; padding: 12px 15px; border: none; margin-top: 8px; font-size: 16px; font-family: Arial, Helvetica, sans-serif; cursor: pointer; }
+.accordion-btn::after { content: "+"; float: right; }
+.accordion-btn.active::after { content: "-"; }
+.accordion-btn:hover, .accordion-btn:focus { background-color: #0B2545; }
+.accordion-panel { max-height: 0; overflow: hidden; background-color: white; transition: max-height 0.4s ease; }
+.accordion-panel.open { max-height: 200px; }
+.accordion-panel p { padding: 10px 15px; }
+
+.hero-images img { cursor: pointer; transition: transform 0.3s ease; }
+.hero-images img:hover { transform: scale(1.03); }
+.lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); z-index: 1000; align-items: center; justify-content: center; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 90%; max-height: 85%; }
+.lightbox-close { position: absolute; top: 15px; right: 25px; font-size: 40px; color: white; background: none; border: none; cursor: pointer; }
+
+#map { height: 350px; }
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* property cards (built by js/properties.js) */
+.container div img { width: 100%; height: 170px; object-fit: cover; margin: 0 0 10px 0; }
+.container div .tag { display: inline-block; background-color: #C5CCD6; color: #0B2545; font-size: 13px; font-weight: bold; padding: 2px 10px; margin-bottom: 5px; }
+.container div .price { font-weight: bold; color: #0B2545; }
+.container div .location { font-size: 14px; color: #5A6270; }
+.search-bar select, .search-bar input { max-width: 100%; }
+
+/* mobile menu button (hidden on desktop) */
+.menu-toggle { display: none; }
+
+/* ============ FOOTER ============ */
+
+footer {
+  background-color: #0B2545;
+  color: #C5CCD6;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN / BREAKPOINTS
+   ============================================================ */
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    width: 100%;
+    background-color: #0B2545;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  nav ul {
+    gap: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    padding: 12px;
+    border-top: 1px solid #13315C;
+  }
+
+  body {
+    background-color: #E9ECF1;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .container {
+    grid-template-columns: auto auto;
+  }
+
+  .hero-images {
+    grid-template-columns: auto auto;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .hero-images {
+    grid-template-columns: auto;
+  }
+
+  .hero-images img {
+    height: 180px;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .map-box iframe {
+    height: 180px;
+  }
+
+  #map {
+    height: 280px;
+  }
+}
+
+/* homepage search bar sits centred inside the hero */
+.hero .search-bar { margin: 15px auto 25px auto; text-align: left; }

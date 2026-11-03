@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Houses, Rooms, Hotels and Venues in South Africa | TN Real Estate</title>
+  <meta name="description" content="Search houses, apartments, rooms, hotels and event venues to rent or buy across South Africa. Filter by location and type with TN Real Estate.">
+  <meta name="keywords" content="houses for sale, apartments to rent Johannesburg, rooms to rent Pretoria, guest houses Durban, wedding venues Stellenbosch">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TN Real Estate</h1>
+    <p>Homes &bull; Rooms &bull; Hotels &bull; Event Venues</p>
+
+    <button class="menu-toggle" aria-label="Open menu">&#9776; Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="properties.html" class="current">Properties</a></li>
+        <li><a href="enquiry.html">Make an Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Properties</h2>
+    <p>Houses, apartments, rooms, hotels and event venues across South Africa. Use the search to find the right place.</p>
+
+    <picture>
+      <source media="(max-width: 480px)" srcset="images/responsive/furnished-lounge-480w.jpg">
+      <source media="(max-width: 768px)" srcset="images/responsive/furnished-lounge-800w.jpg">
+      <img class="responsive-image" src="images/responsive/furnished-lounge-1200w.jpg" alt="Furnished lounge with a sofa, wooden floors and large windows">
+    </picture>
+
+    <div class="search-bar">
+      <label for="property-search">Search properties</label>
+      <input type="text" id="property-search" placeholder="e.g. Sandton">
+      <label for="property-type">Property type</label>
+      <select id="property-type">
+        <option value="">All types</option>
+        <option value="house">House</option>
+        <option value="apartment">Apartment</option>
+        <option value="room">Room</option>
+        <option value="hotel">Hotel</option>
+        <option value="venue">Event Venue</option>
+      </select>
+      <label for="property-sort">Sort by</label>
+      <select id="property-sort">
+        <option value="az">Name (A to Z)</option>
+        <option value="za">Name (Z to A)</option>
+      </select>
+    </div>
+    <p id="property-count"></p>
+    <div class="container" id="properties-list"></div>
+    <a class="btn" href="enquiry.html">Make an Enquiry</a>
+
+    <h2>Own a Property?</h2>
+    <p>
+      List your home, room, hotel or venue with TN Real Estate and reach
+      buyers, renters and event planners looking for a place like yours.
+      <a href="enquiry.html">Send us an enquiry</a> and choose "List my property".
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2026 TN Real Estate. All rights reserved. South Africa.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/properties.js"></script>
+</body>
+</html>

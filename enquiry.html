@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Property Enquiry | TN Real Estate</title>
+  <meta name="description" content="Enquire about a house, room, hotel or event venue with TN Real Estate, or list your own property. Choose your service and date to see an estimate.">
+  <meta name="keywords" content="property enquiry South Africa, book guest house, book event venue, list my property, rent a room">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TN Real Estate</h1>
+    <p>Homes &bull; Rooms &bull; Hotels &bull; Event Venues</p>
+
+    <button class="menu-toggle" aria-label="Open menu">&#9776; Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="enquiry.html" class="current">Make an Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Make an Enquiry</h2>
+    <p>Ask about a property, book a hotel or venue, or list your own. Fill in the form to see an estimate and our availability.</p>
+    <form id="enquiry-form" action="enquiry.html" method="post" novalidate>
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" minlength="2" required>
+      <span class="error" id="name-error"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="email-error"></span>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" placeholder="0821234567" required>
+      <span class="error" id="phone-error"></span>
+
+      <label for="service">Service required</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose a service --</option>
+        <option>Buy a property</option>
+        <option>Rent a house, apartment or room</option>
+        <option>Book a hotel or guest house</option>
+        <option>Book an event venue</option>
+        <option>List my property</option>
+      </select>
+      <span class="error" id="service-error"></span>
+
+      <label for="listing">Listing (optional)</label>
+      <input type="text" id="listing" name="listing" placeholder="e.g. Garden Apartment">
+
+      <label>How should we contact you?</label>
+      <div class="option"><input type="radio" id="contact-phone" name="method" value="Phone"><label for="contact-phone">Phone</label></div>
+      <div class="option"><input type="radio" id="contact-email" name="method" value="Email"><label for="contact-email">Email</label></div>
+      <span class="error" id="method-error"></span>
+
+      <label>Extras</label>
+      <div class="option"><input type="checkbox" id="viewing" name="extras" value="viewing"><label for="viewing">Arrange a viewing or visit</label></div>
+      <div class="option"><input type="checkbox" id="similar" name="extras" value="similar"><label for="similar">Send me similar listings</label></div>
+
+      <label for="date">Preferred viewing or call-back date</label>
+      <input type="date" id="date" name="date" required>
+      <span class="error" id="date-error"></span>
+
+      <label for="details">Message (optional)</label>
+      <textarea id="details" name="details" maxlength="500"></textarea>
+
+      <button type="submit" class="btn">Get Estimate</button>
+    </form>
+    <div id="enquiry-response" class="response-box"></div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 TN Real Estate. All rights reserved. South Africa.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/enquiry.js"></script>
+</body>
+</html>

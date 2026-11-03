@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact TN Real Estate | Property Enquiries in South Africa</title>
+  <meta name="description" content="Contact TN Real Estate with questions about a listing. Find our office on the map, call us or send a message online.">
+  <meta name="keywords" content="contact TN Real Estate, property agent Johannesburg, real estate enquiries">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TN Real Estate</h1>
+    <p>Homes &bull; Rooms &bull; Hotels &bull; Event Venues</p>
+
+    <button class="menu-toggle" aria-label="Open menu">&#9776; Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="enquiry.html">Make an Enquiry</a></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>Have a question about a listing, or need help finding a place? Find our office on the map, or reach out using the form below.</p>
+
+    <div class="map-box">
+      <div id="map"></div>
+    </div>
+
+
+    <h2>Get In Touch</h2>
+    <p>Phone: 011 000 0000 <br> Email: info@tnrealestate.co.za</p>
+    <p>Office Hours: Monday - Friday, 08:00am - 17:00pm</p>
+
+  <h2>Send Us a Message</h2>
+    <form id="contact-form" action="mailto:info@tnrealestate.co.za" method="post" enctype="text/plain" novalidate>
+      <label for="c-name">Name</label>
+      <input type="text" id="c-name" minlength="2" required>
+      <span class="error" id="c-name-error"></span>
+
+      <label for="c-email">Email</label>
+      <input type="email" id="c-email" required>
+      <span class="error" id="c-email-error"></span>
+
+      <label for="c-phone">Phone number</label>
+      <input type="tel" id="c-phone" placeholder="0821234567" required>
+      <span class="error" id="c-phone-error"></span>
+
+      <label for="c-type">Type of message</label>
+      <select id="c-type" required>
+        <option value="">-- Choose a type --</option>
+        <option>General question</option>
+        <option>Question about a listing</option>
+        <option>Request a callback</option>
+        <option>Feedback</option>
+        <option>Other</option>
+      </select>
+      <span class="error" id="c-type-error"></span>
+
+      <label for="c-message">Message</label>
+      <textarea id="c-message" minlength="10" maxlength="500" required></textarea>
+      <span class="error" id="c-message-error"></span>
+
+      <button type="submit" class="btn">Prepare Email</button>
+    </form>
+    <div id="contact-response" class="response-box"></div>
+  </main>
+
+  <footer>
+    &copy; 2026 TN Real Estate. All rights reserved. South Africa.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

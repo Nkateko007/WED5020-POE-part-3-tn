@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TN Real Estate | Homes, Rooms, Hotels and Event Venues in South Africa</title>
+  <meta name="description" content="TN Real Estate connects you with houses, apartments, rooms, hotels and event venues to rent or buy across South Africa. Search listings or list your property.">
+  <meta name="keywords" content="real estate South Africa, houses for sale, apartments to rent, rooms to rent, guest houses, event venues, TN Real Estate">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TN Real Estate</h1>
+    <p>Homes &bull; Rooms &bull; Hotels &bull; Event Venues</p>
+
+    <button class="menu-toggle" aria-label="Open menu">&#9776; Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="enquiry.html">Make an Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- home page: search bar, a few of our listing photos, and the categories -->
+  <div class="hero">
+    <h2>Find Your Next Place</h2>
+    <p>
+      TN Real Estate connects you with homes, rooms, hotels and event
+      venues to rent or buy, all in one place across South Africa.
+    </p>
+
+    <form class="search-bar" id="hero-form" novalidate>
+      <label for="hero-location">Search by location</label>
+      <input type="text" id="hero-location" placeholder="e.g. Sandton">
+      <label for="hero-type">Property type</label>
+      <select id="hero-type">
+        <option value="">All types</option>
+        <option value="house">House</option>
+        <option value="apartment">Apartment</option>
+        <option value="room">Room</option>
+        <option value="hotel">Hotel</option>
+        <option value="venue">Event Venue</option>
+      </select>
+      <button type="button" id="hero-search" class="btn">Search</button>
+    </form>
+
+    <div class="hero-images">
+      <img
+        src="images/responsive/family-home-800w.jpg"
+        srcset="images/responsive/family-home-480w.jpg 480w,
+                images/responsive/family-home-800w.jpg 800w,
+                images/responsive/family-home-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+        alt="Modern family home for sale listed by TN Real Estate">
+      <img
+        src="images/responsive/garden-apartment-800w.jpg"
+        srcset="images/responsive/garden-apartment-480w.jpg 480w,
+                images/responsive/garden-apartment-800w.jpg 800w,
+                images/responsive/garden-apartment-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+        alt="Garden apartment block to rent in Rosebank, Johannesburg">
+      <img
+        src="images/responsive/living-room-800w.jpg"
+        srcset="images/responsive/living-room-480w.jpg 480w,
+                images/responsive/living-room-800w.jpg 800w,
+                images/responsive/living-room-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+        alt="Bright furnished room to rent with large windows">
+      <img
+        src="images/responsive/brick-home-800w.jpg"
+        srcset="images/responsive/brick-home-480w.jpg 480w,
+                images/responsive/brick-home-800w.jpg 800w,
+                images/responsive/brick-home-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+        alt="Red brick family home with a large garden">
+      <img
+        src="images/responsive/guest-house-800w.jpg"
+        srcset="images/responsive/guest-house-480w.jpg 480w,
+                images/responsive/guest-house-800w.jpg 800w,
+                images/responsive/guest-house-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+        alt="Seaside guest house available through TN Real Estate">
+      <img
+        src="images/responsive/furnished-lounge-800w.jpg"
+        srcset="images/responsive/furnished-lounge-480w.jpg 480w,
+                images/responsive/furnished-lounge-800w.jpg 800w,
+                images/responsive/furnished-lounge-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+        alt="Furnished lounge in a student room near the university">
+    </div>
+  </div>
+
+  <main>
+    <h2>Browse By Category</h2>
+    <p>A quick look at what we offer. Visit the <a href="properties.html">Properties page</a> to see every listing.</p>
+
+    <div class="container">
+      <div>
+        <span class="icon"></span>
+        <h3>Houses &amp; Apartments</h3>
+        <p>Homes for sale and rent in the areas you want to live in.</p>
+        <a class="btn" href="properties.html?type=house">View Homes</a>
+      </div>
+
+      <div>
+        <span class="icon"></span>
+        <h3>Rooms</h3>
+        <p>Affordable furnished rooms, close to universities and work.</p>
+        <a class="btn" href="properties.html?type=room">View Rooms</a>
+      </div>
+
+      <div>
+        <span class="icon"></span>
+        <h3>Hotels &amp; Guest Houses</h3>
+        <p>Short stays and holidays at guest houses and hotels.</p>
+        <a class="btn" href="properties.html?type=hotel">View Hotels</a>
+      </div>
+
+      <div>
+        <span class="icon"></span>
+        <h3>Event Venues</h3>
+        <p>Weddings, meetings and other events, with space for your guests.</p>
+        <a class="btn" href="properties.html?type=venue">View Venues</a>
+      </div>
+    </div>
+
+    <h2>Why Choose TN Real Estate?</h2>
+    <ul>
+      <li>Homes, rooms, hotels and venues in one easy search</li>
+      <li>Every listing is checked before it is published</li>
+      <li>Own a property? List it with us and reach buyers and renters</li>
+    </ul>
+    <a class="btn" href="enquiry.html">Make an Enquiry</a>
+  </main>
+
+  <footer>
+    &copy; 2026 TN Real Estate. All rights reserved. South Africa.
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close image">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
